@@ -1,0 +1,405 @@
+/* font-family: 'Cedarville Cursive', cursive;
+colors:
+text - light #ebeef0, dark #26292e
+border - #ffd8e5
+button- top grad #5c5b59, bot grad #26292e
+mid-sec-top-bg - top grad #e8fda6, low grad #e7718b
+mid-sec-mid-bg - #f4f4f6
+mid-sec-bot-bg - #ffffff
+mid-sec-bot-icon-bgs - border #bbc4d5, center #444444
+*/
+
+/* break points
+    small = 576
+    med = 768
+    large = 992
+*/
+
+/* start generic */
+
+*{box-sizing: border-box;}
+
+.button {
+    background-color: #292924;
+    color: #ebeef0;
+    border-radius: 5%;
+}
+
+.button:hover {
+    color: #292924;
+    background-color: #9dc6f7;
+}
+
+/* end generic */
+
+/* icons */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+.icon-bubbles2 {
+    width: 1.125em;
+}
+
+.so-icon {
+    color: #292924;
+    background-color: #bbc4d5;
+    border-radius: 50%;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.so-icon:hover {
+    background-color: #9dc6f7;
+    transition: 0.3s;
+}
+
+.mid-sec-img {
+    font-size: 40px;
+}
+
+.mid-sec-img:hover {
+    color: #9dc6f7;
+}
+
+.low-sec-img {
+    color: #bbc4d5;
+    font-size: 50px;
+    display: block;
+    margin: 15% auto;
+}
+
+.low-sec-img:hover {
+    color: #9dc6f7;
+}
+
+/* end icons */
+
+/* start header */
+
+.header-section {
+    background-color: #292924;
+}
+
+.logo {
+    font-family: 'Cedarville Cursive', cursive;
+    color: #bbc4d5;
+}
+
+/* header media */
+@media(max-width:576px) {
+    .logo {
+        margin-top: 5px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .so-icon {
+        display: none;
+    }
+}
+
+@media(max-width:776px) {
+    .logo {
+        margin-top: 5px;
+        font-size: 35px;
+    }
+
+    .so-icon {
+        font-size: 40px;
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:992px) {
+    .logo {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+
+    .so-icon {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width:993px) {
+    .logo {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    
+    .button {
+        margin-bottom: 5px;
+    }
+
+    .so-icon {
+        margin-top: 5px;
+    }
+}
+/* header media end */
+
+/* end header */
+
+/* start main */
+
+.top-section {
+    background-image:
+    linear-gradient(
+    to top, 
+    #e7718b, #ee8ca3
+    );
+    color: #ebeef0;
+    border-bottom: #ffd8e5 solid 5px;
+    font-family: Roboto, sans-serif;
+}
+
+/* top sec media */
+@media (max-width:576px) {
+    .block1 {
+        text-align: center;
+    }
+
+    .top-section-header {
+        font-size: 25px;
+    }
+
+    .top-text {
+        font-size: 14px;
+    }
+
+    .block2 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:776px) {
+    .top-section-header {
+        font-size: 27px;
+    }
+
+    .top-text {
+        font-size: 16px;
+    }
+
+    .button {
+        margin-bottom: 5px;
+    }
+
+    .laptop {
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:992px) {
+    .laptop {
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 60%;
+    }
+}
+
+@media (min-width:993px) {
+    .laptop {
+        width: 50%;
+    }
+}
+/* top sec media close */
+
+.mid-section {
+    background-color: #f4f4f6;
+    border-bottom: 10px solid #ffd8e5;
+}
+
+.mid-sec-head-img {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* mid sec media */
+
+@media (max-width:576px) {
+    .mid-sec-img {
+        font-size: 18px;
+    }
+
+    .mid-section-header {
+        font-size: 16px;
+    }
+
+    .mid-text1 {
+        font-size: 12px;
+    }
+
+    .mid-text2 {
+        display: none;
+    }
+}
+
+@media (max-width:776px) {
+    .mid-sec-img {
+        font-size: 20px;
+    }
+
+    .mid-section-header {
+        font-size: 20px;
+    }
+
+    .mid-text1 {
+        font-size: 14px;
+    }
+
+    .mid-text2 {
+        font-size: 14px;
+    }
+}
+
+/* mid sec media close */
+
+.product {
+    margin-bottom: 40px;
+    width: 40%;
+    min-width: 250px;
+    min-height: 15vh;
+    background-color: #292924;
+    border: #bbc4d5 solid 5px;
+}
+
+.product:hover {
+    border: #9dc6f7 5px solid;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* pro sec media */
+
+@media (max-width:576px) {
+    .lower-section-header {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .lower-section-imgs {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product3 {
+        display: none;
+    }
+
+    .product4{
+        display: none;
+    }
+
+    .lower-section-quotes {
+        display: none;
+    }
+}
+
+@media (max-width:776px) {
+    .product3 {
+        display: none;
+    }
+
+    .product4{
+        display: none;
+    }
+
+    .lower-section-text {
+        margin-bottom: 50px;
+    }
+
+    .low-sec-text3 {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    .product3 {
+        display: none;
+    }
+
+    .product4 {
+        display: none;
+    }
+}
+
+/* pro sec media close */
+
+/* end main */
+
+/* start footer */
+
+.footer {
+    color: #bbc4d5;
+    background-color: #292924;
+}
+
+.colophon {
+    margin-top: 10px;
+}
+
+.col-link {
+    color: #bbc4d5;
+}
+
+.col-link:hover {
+    color: #9dc6f7;
+}
+
+/* footer media */
+@media (max-width:576px) {
+    .colophon {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width:776px) {
+    .colophon {
+        font-size: 14px;
+    }
+
+    .so-icon-bot {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:992px) {
+    .so-icon-bot {
+        margin-top: 5px;
+    }
+}
+
+@media (min-width:993px) {
+    .so-icon-bot {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+/* footer media end */
+
+/* end footer */
